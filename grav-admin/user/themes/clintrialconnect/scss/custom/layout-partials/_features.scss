@@ -17,6 +17,11 @@
     left: 0px;
     box-shadow: $btn-default-shadow;
     width: 35%;
+	border: 2px solid white;
+	border-left: none;
+	  border-radius: 10px;
+	  border-top-left-radius: 0;
+	  border-bottom-left-radius: 0;
   }
   
   .feature-list-item {

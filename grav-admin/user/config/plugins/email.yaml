@@ -1,0 +1,15 @@
+enabled: true
+from: sales@clintrialapp.com
+from_name: ClinTrialConnect
+to: sales@clintrialapp.com
+to_name: ClinTrialConnect
+mailer:
+  engine: mail
+  smtp:
+    server: localhost
+    port: 25
+    encryption: none
+  sendmail:
+    bin: /usr/sbin/sendmail
+content_type: text/html
+debug: false

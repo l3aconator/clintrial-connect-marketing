@@ -3,7 +3,7 @@
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
             <li class="has-children {{ current_page }}">
-                <a href="{{ p.url }}">
+                <a class="nav-list-item" href="{{ p.url }}">
                     {{ p.menu }}
                     <span></span>
                 </a>
@@ -13,7 +13,7 @@
             </li>
         {% else %}
             <li class="{{ current_page }}">
-                <a href="{{ p.url }}">
+                <a class="nav-list-item" href="{{ p.url }}">
                     {{ p.menu }}
                 </a>
             </li>
@@ -28,7 +28,7 @@
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
             <li class="{{ current_page }}">
-                <a href="{{ page.url }}">
+                <a class="nav-list-item" href="{{ page.url }}">
                     {{ page.menu }}
                 </a>
             </li>
@@ -36,13 +36,13 @@
     {% endif %}
     {% for mitem in site.menu %}
         <li>
-            <a href="{{ mitem.url }}">
+            <a class="nav-list-item" href="{{ mitem.url }}">
                 {{ mitem.text }}
             </a>
         </li>
     {% endfor %}
     {% if config.plugins.login.enabled and grav.user.username %}
-        <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
+        <li> {% include 'partials/login-status.html.twig' %}</li>
     {% endif %}
 </ul>
 

@@ -26,26 +26,27 @@ class __TwigTemplate_7286a63354da19d1857e7684fa908de71bd62c00f10329e2492ef282aca
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array());
         echo "</h2>
     
-    <form class=\"contact-form\">
+    <form class=\"contact-form\" action=\"https://formspree.io/sales@clintrialapp.com\" method=\"post\">
       <div class=\"row\">
         <div class=\"col-md-6\">
           <div class=\"form-group\">
-            <label for=\"name\">Email address</label>
-            <input type=\"text\" class=\"form-control input-lg\" placeholder=\"Enter your name…\">
+            <label for=\"name\">Name</label>
+            <input type=\"text\" class=\"form-control input-lg\" name=\"name\" placeholder=\"Enter your name…\">
           </div>
         </div>
         <div class=\"col-md-6\">
           <div class=\"form-group\">
             <label for=\"Email\">Email address</label>
-            <input type=\"email\" class=\"form-control input-lg\" placeholder=\"Enter your email…\">
+            <input type=\"email\" class=\"form-control input-lg\" placeholder=\"Enter your email…\" name=\"email\">
           </div>
         </div>
       </div>
       <div class=\"form-group\">
-        <label for=\"name\">Message</label>
-        <textarea class=\"form-control input-lg\" placeholder=\"Enter your message…\"></textarea>
+        <label for=\"message\">Message</label>
+        <textarea class=\"form-control input-lg\" placeholder=\"Enter your message…\" name=\"message\"></textarea>
       </div>
       <input class=\"btn btn-success\" type=\"submit\" />
+      <input type=\"hidden\" name=\"_next\" value=\"/home/form-thanks\" />
     </form>
   </div>
 </section>";
@@ -71,26 +72,27 @@ class __TwigTemplate_7286a63354da19d1857e7684fa908de71bd62c00f10329e2492ef282aca
 /*     */
 /*     <h2 class="text-center">{{ page.title }}</h2>*/
 /*     */
-/*     <form class="contact-form">*/
+/*     <form class="contact-form" action="https://formspree.io/sales@clintrialapp.com" method="post">*/
 /*       <div class="row">*/
 /*         <div class="col-md-6">*/
 /*           <div class="form-group">*/
-/*             <label for="name">Email address</label>*/
-/*             <input type="text" class="form-control input-lg" placeholder="Enter your name…">*/
+/*             <label for="name">Name</label>*/
+/*             <input type="text" class="form-control input-lg" name="name" placeholder="Enter your name…">*/
 /*           </div>*/
 /*         </div>*/
 /*         <div class="col-md-6">*/
 /*           <div class="form-group">*/
 /*             <label for="Email">Email address</label>*/
-/*             <input type="email" class="form-control input-lg" placeholder="Enter your email…">*/
+/*             <input type="email" class="form-control input-lg" placeholder="Enter your email…" name="email">*/
 /*           </div>*/
 /*         </div>*/
 /*       </div>*/
 /*       <div class="form-group">*/
-/*         <label for="name">Message</label>*/
-/*         <textarea class="form-control input-lg" placeholder="Enter your message…"></textarea>*/
+/*         <label for="message">Message</label>*/
+/*         <textarea class="form-control input-lg" placeholder="Enter your message…" name="message"></textarea>*/
 /*       </div>*/
 /*       <input class="btn btn-success" type="submit" />*/
+/*       <input type="hidden" name="_next" value="/home/form-thanks" />*/
 /*     </form>*/
 /*   </div>*/
 /* </section>*/

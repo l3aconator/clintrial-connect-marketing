@@ -1,12 +1,15 @@
-{% extends 'partials/base.html.twig' %}
+{% embed 'partials/base.html.twig' %}
 
 {% block content %}
-	<div id="error">
-		<div class="container">
+	<section id="error">
+		<div class="container section-pad" style="padding-top: 60px;">
 			<h1>{{ 'ERROR'|t }} {{ page.header.http_response_code }}</h1>
-			<p>
+			<h2>
 				{{ page.content }}
-			</p>
+			</h2>
+            <a class="btn btn-lg btn-primary "href="/">Go back</a>
 		</div>
-	</div>
+	</section>
+
 {% endblock %}
+{% endembed %}

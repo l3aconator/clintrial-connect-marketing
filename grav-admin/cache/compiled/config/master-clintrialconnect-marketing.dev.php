@@ -1,13 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1475888281,
-    'checksum' => '1989f439c4a082684cdec5373a2792e4',
+    'timestamp' => 1476127157,
+    'checksum' => '9f1261ce1063004ef88de3c87d5f7302',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1475862910
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1476125563
+            ],
+            'plugins/login' => [
+                'file' => 'user/config/plugins/login.yaml',
+                'modified' => 1476125605
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1473845650
+                'modified' => 1476125230
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1475888280
+                'modified' => 1476127155
             ]
         ],
         'system/config' => [
@@ -59,11 +67,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1473845650
+                'modified' => 1476125523
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1473845650
+                'modified' => 1476125524
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
@@ -129,10 +137,10 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
+                'from' => 'sales@clintrialapp.com',
+                'from_name' => 'ClinTrialConnect',
+                'to' => 'sales@clintrialapp.com',
+                'to_name' => 'ClinTrialConnect',
                 'mailer' => [
                     'engine' => 'mail',
                     'smtp' => [
@@ -199,9 +207,9 @@ return [
                         'validate_password1_and_password2' => true,
                         'set_user_disabled' => false,
                         'login_after_registration' => true,
-                        'send_activation_email' => false,
-                        'send_notification_email' => false,
-                        'send_welcome_email' => false
+                        'send_activation_email' => true,
+                        'send_notification_email' => true,
+                        'send_welcome_email' => '1'
                     ]
                 ],
                 'rememberme' => [
@@ -480,17 +488,18 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'ClinTrialConnect',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'ClinTrialApp, LLC',
+                'email' => 'sales@clintrialapp.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Clinical trials can be complex. ClinTrialConnect helps educate patients about clinical trials and their disease. In addition, it provides background information about the pharmaceutical or medical device company, and detailed information about what to expect from a specific clinical trial.',
+                'keywords' => 'clinical, trials, education, connection, connect, help, pharma, doctors, physicians, help, language, patients'
             ],
             'summary' => [
                 'enabled' => true,

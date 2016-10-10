@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Volumes/l3acon Data/development/clintrial-connect-marketing/grav-admin/user/plugins/login/languages.yaml',
-    'modified' => 1473845650,
+    'modified' => 1476125524,
     'data' => [
         'en' => [
             'PLUGIN_LOGIN' => [
@@ -185,10 +185,11 @@ return [
                 'WELCOME_EMAIL_SUBJECT' => 'Bienvenue sur %s',
                 'WELCOME_EMAIL_BODY' => 'Bonjour %s, bienvenue sur %s!',
                 'NOTIFICATION_EMAIL_SUBJECT' => 'Nouvel utilisateur sur %s',
+                'EMAIL_FOOTER' => 'GetGrav.org',
                 'NOTIFICATION_EMAIL_BODY' => 'Bonjour, un nouvel utilisateur s’est inscrit sur %s. Nom d’utilisateur : %s, e-mail : %s',
                 'ACTIVATION_LINK_EXPIRED' => 'Le lien d’activation a expiré',
                 'USER_ACTIVATED_SUCCESSFULLY' => 'Utilisateur activé avec succès',
-                'INVALID_REQUEST' => 'Requête invalide',
+                'INVALID_REQUEST' => 'Requête non valide',
                 'USER_REGISTRATION' => 'Inscription de l’utilisateur',
                 'USER_REGISTRATION_ENABLED_HELP' => 'Activer l’inscription des utilisateurs',
                 'VALIDATE_PASSWORD1_AND_PASSWORD2' => 'Valider la double saisie du mot de passe',

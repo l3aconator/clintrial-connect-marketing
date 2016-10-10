@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1475888282,
-    'checksum' => '958fa02e625607159fb90c7d1bd1449e',
+    'timestamp' => 1476127158,
+    'checksum' => '69117acac3b717e26e2c673d2158d4e3',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -129,11 +129,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1473845650
+                'modified' => 1476125523
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
-                'modified' => 1473845650
+                'modified' => 1476125524
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -6345,10 +6345,11 @@ Ruta: `%2$s`
                 'WELCOME_EMAIL_SUBJECT' => 'Bienvenue sur %s',
                 'WELCOME_EMAIL_BODY' => 'Bonjour %s, bienvenue sur %s!',
                 'NOTIFICATION_EMAIL_SUBJECT' => 'Nouvel utilisateur sur %s',
+                'EMAIL_FOOTER' => 'GetGrav.org',
                 'NOTIFICATION_EMAIL_BODY' => 'Bonjour, un nouvel utilisateur s’est inscrit sur %s. Nom d’utilisateur : %s, e-mail : %s',
                 'ACTIVATION_LINK_EXPIRED' => 'Le lien d’activation a expiré',
                 'USER_ACTIVATED_SUCCESSFULLY' => 'Utilisateur activé avec succès',
-                'INVALID_REQUEST' => 'Requête invalide',
+                'INVALID_REQUEST' => 'Requête non valide',
                 'USER_REGISTRATION' => 'Inscription de l’utilisateur',
                 'USER_REGISTRATION_ENABLED_HELP' => 'Activer l’inscription des utilisateurs',
                 'VALIDATE_PASSWORD1_AND_PASSWORD2' => 'Valider la double saisie du mot de passe',
@@ -15413,6 +15414,6 @@ Path: `%2$s`
                 6 => 'Chủ Nhật'
             ]
         ],
-        'checksum' => '958fa02e625607159fb90c7d1bd1449e'
+        'checksum' => '69117acac3b717e26e2c673d2158d4e3'
     ]
 ];

@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Volumes/l3acon Data/development/clintrial-connect-marketing/grav-admin/user/plugins/form/blueprints.yaml',
-    'modified' => 1473845650,
+    'modified' => 1476125523,
     'data' => [
         'name' => 'Form',
-        'version' => '2.0.3',
+        'version' => '2.0.5',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
