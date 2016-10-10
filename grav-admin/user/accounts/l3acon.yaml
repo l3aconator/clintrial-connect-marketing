@@ -1,0 +1,11 @@
+email: hello@kylebaconcreative.com
+fullname: 'Kyle Bacon'
+title: Dev
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$NJXpIKIHO.2GykQdP7J55OjrI124lVZfv0kWExd1uTu2He/ld16CG

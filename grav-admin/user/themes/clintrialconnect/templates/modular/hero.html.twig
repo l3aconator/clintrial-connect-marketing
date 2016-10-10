@@ -1,0 +1,32 @@
+<div class="modular-row hero {{ page.header.class}}" style="background-image: url( {{ page.media[page.header.backgroundImage].url }} )">
+  <div class="container section-pad">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1 class="text-white main-heading">{{ page.title }}</h1>
+      </div>
+      <div class="col-md-3 offset-col-md-3">
+      </div>
+      <div class="col-md-3 col-sm-6">
+        {% for cta in page.header.ctaBlock %}
+          <div class="info-box text-center">
+            {% if cta.header %}
+              <h3 class="text-white">{{cta.header}}</h3>
+            {% endif %}
+            <a class="btn btn-{{cta.class}}" href="{{cta.link}}">{{cta.button}}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="sub-hero" id="about">
+      <div class="container">
+        <div class="light-gray-box">
+          <div class="content">
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>

@@ -1,0 +1,27 @@
+name: ClinTrialConnect Theme
+version: 0.0.1
+description: "ClinTrialConnect Marketing Theme"
+icon: empire
+author:
+  name: Kyle Bacon Creative
+  email: hello@kylebaconcreative.com
+  url: http://kylebaconcreative.com
+homepage: http://kylebaconcreative.com
+demo: http://kylebaconcreative.com
+keywords: theme
+bugs: http://kylebaconcreative.com
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

@@ -1,0 +1,34 @@
+1476493695
+a:2:{s:7:"content";s:1590:"<div class="modular-row hero " style="background-image: url( /user/pages/01.home/_hero/herobg.jpg )">
+  <div class="container section-pad">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1 class="text-white main-heading">ClinTrialConnect connects patients with clinicaltrials that are available at their current physicians office</h1>
+      </div>
+      <div class="col-md-3 offset-col-md-3">
+      </div>
+      <div class="col-md-3 col-sm-6">
+                  <div class="info-box text-center">
+                          <h3 class="text-white">Are you a patient?</h3>
+                        <a class="btn btn-primary" href="#">Patient Login</a>
+          </div>
+                  <div class="info-box text-center">
+                          <h3 class="text-white">Are you an admin?</h3>
+                        <a class="btn btn-default" href="#">Admin Login</a>
+          </div>
+              </div>
+    </div>
+  </div>
+  
+  <div class="sub-hero" id="about">
+      <div class="container">
+        <div class="light-gray-box">
+          <div class="content">
+            <h2>ClinTrialConnect helps patients understand the specific details of clinical trials available to them</h2>
+<p>Clinical trials can be complex, ClinTrialConnect helps educate patients are clinical trials and their disease. In addition, it provides background information about the pharmaceutical or medical device company, previous publications and detailed information about what to expect from a specific clinical trial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>";s:12:"content_meta";N;}

@@ -1,0 +1,60 @@
+<section class="modular-row features {{ page.header.class}}">
+  
+  <img class="web-app-image" src="{{ page.media[page.header.webAppImage].url }}" alt="A screenshot of the dashboard for ClinTrialConnect" />
+  
+  <div class="container section-pad">
+    <h2 class="feature-main-heading text-center text-white">{{ page.title }}</h2>
+    <div class="features-list">
+      <div class="row">
+        <div class="col-md-4 offset-col-md-4">
+          
+        </div>
+      
+      {% for feature in page.header.features %}
+       <div class="feature-list-item col-md-4">
+         
+        {% if feature.icon %}
+         <div class="feature-icon-box">
+          <i class="feature-icon typcn typcn-{{ feature.icon }}"></i>
+         </div>
+          <div class="feature-content icon">
+        {% else %}
+            
+          <div class="feature-content text-center">
+          {% endif %}
+
+            {% if feature.header %}
+              <h4 class="feature-heading text-center">{{ feature.header }}</h4>
+            {% endif %}
+
+            {% if feature.text %}
+              <p class="feature-text text-center">{{ feature.text }}</p>
+            {% endif %}
+
+          </div>
+         </div>
+         {% endfor %}
+         
+        </div>
+      </div>
+    </div>
+    
+    <div class="cta-block">
+      <div class="container">
+        <div class="info-box">
+          <div class="row">
+            {% for cta in page.header.ctaBlock %}
+              <div class="col-md-6 text-center">
+                {% if cta.header %}
+                  <h3 class="text-white">{{cta.header}}</h3>
+                {% endif %}
+                <a class="btn btn-{{cta.class}}" href="{{cta.link}}">{{cta.button}}</a>
+              </div>
+             {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>

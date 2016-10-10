@@ -1,0 +1,64 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+{% block javascripts %}
+    {% if show_onpage_menu %}
+        {% do assets.add('theme://js/singlePageNav.min.js') %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block bottom %}
+    {{ parent() }}
+    {% if show_onpage_menu %}
+        <script>
+        // singlePageNav initialization & configuration
+        $('#navbar').singlePageNav({
+            offset: $('#header').outerHeight(),
+            filter: ':not(.external)',
+            updateHash: true,
+            currentClass: 'active'
+        });
+        </script>
+    {% endif %}
+{% endblock %}
+
+{% block header_navigation %}
+    {% if show_onpage_menu %}
+        <ul class="nav-list">
+            <li>
+              <a class="nav-list-item" href="#about">About</a>
+            </li>
+        {% for module in page.collection() %}
+            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
+            <li class="{{ current_module }}"><a class="nav-list-item" href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>
+        {% endfor %}
+        {% for mitem in site.menu %}
+            <li>
+                <a class="nav-list-item" href="{{ mitem.url }}">
+                    {{ mitem.text }}
+                </a>
+            </li>
+        {% endfor %}
+            <li>
+              <div class="btn-group login-btn-group" role="group" aria-label="Button Login Group">
+                  <a href="#" class="btn btn-sm btn-primary">Patient Login</a>
+                  <a href="#" class="btn btn-sm btn-default">Research Site Login</a>
+              </div>
+            </li>
+        </ul>
+    {% else %}
+        {{  parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ page.content }}
+    {% for module in page.collection() %}
+        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
+        {{ module.content }}
+    {% endfor %}
+{% endblock %}
