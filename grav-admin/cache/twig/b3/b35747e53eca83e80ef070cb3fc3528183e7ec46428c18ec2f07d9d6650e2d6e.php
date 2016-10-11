@@ -48,27 +48,27 @@ class __TwigTemplate_72ae577e9f3bd012d20c7a80b192b5495abf99ed93e3a64cee4a3f4edb5
     ";
         // line 58
         $this->displayBlock('header', $context, $blocks);
-        // line 88
+        // line 93
         echo "
     ";
-        // line 89
+        // line 94
         $this->displayBlock('showcase', $context, $blocks);
-        // line 90
+        // line 95
         echo "
     ";
-        // line 91
-        $this->displayBlock('body', $context, $blocks);
         // line 96
+        $this->displayBlock('body', $context, $blocks);
+        // line 101
         echo "
     ";
-        // line 97
+        // line 102
         $this->displayBlock('footer', $context, $blocks);
-        // line 100
+        // line 105
         echo "  </div>
     ";
-        // line 101
+        // line 106
         $this->displayBlock('bottom', $context, $blocks);
-        // line 104
+        // line 109
         echo "</body>
 </html>
 ";
@@ -246,98 +246,103 @@ class __TwigTemplate_72ae577e9f3bd012d20c7a80b192b5495abf99ed93e3a64cee4a3f4edb5
         echo "    <header class=\"header\">
       <div class=\"container\">
         <div class=\"row\">
-        <div class=\"main-logo\">
-          <a href=\"";
-        // line 63
+          <div class=\"col-md-3\">
+            <div class=\"main-logo\">
+              <a href=\"";
+        // line 64
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
         echo "\">
-            <img src=\"";
-        // line 64
+                <img src=\"";
+        // line 65
         echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://images/ClinTrialConnect.svg");
         echo "\" alt=\"ClinTrialConnect Logo\" />
-          </a>
-        </div>
-        <div class=\"mobile-menu clearfix js-menu-activate\">
-          <div class=\"pull-right\">
-            <span class=\"menu-text\">Menu</span>
-            <div class=\"menu-icon js-menu\">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+              </a>
+              </div>
           </div>
-        </div>
-        <div class=\"pull-right\">
-          ";
-        // line 78
+          <div class=\"col-md-9\">
+            <div class=\"mobile-menu clearfix js-menu-activate\">
+              <div class=\"pull-right\">
+                <span class=\"menu-text\">Menu</span>
+                <div class=\"menu-icon js-menu\">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class=\"navbar pull-right js-menu-main\">
+              ";
+        // line 81
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 80
-        echo "          ";
-        $this->displayBlock('header_navigation', $context, $blocks);
         // line 83
-        echo "        </div>
+        echo "              ";
+        $this->displayBlock('header_navigation', $context, $blocks);
+        // line 86
+        echo "            </div>
+          </div>
+        
         </div>
       </div>
     </header>
     ";
     }
 
-    // line 78
+    // line 81
     public function block_header_extra($context, array $blocks = array())
     {
-        // line 79
-        echo "          ";
+        // line 82
+        echo "              ";
     }
 
-    // line 80
+    // line 83
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 81
-        echo "            ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 81)->display($context);
-        // line 82
-        echo "          ";
+        // line 84
+        echo "                ";
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 84)->display($context);
+        // line 85
+        echo "              ";
     }
 
-    // line 89
+    // line 94
     public function block_showcase($context, array $blocks = array())
     {
     }
 
-    // line 91
+    // line 96
     public function block_body($context, array $blocks = array())
     {
-        // line 92
+        // line 97
         echo "    <section id=\"body\" class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
       ";
-        // line 93
+        // line 98
         $this->displayBlock('content', $context, $blocks);
-        // line 94
+        // line 99
         echo "    </section>
     ";
     }
 
-    // line 93
+    // line 98
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 97
+    // line 102
     public function block_footer($context, array $blocks = array())
     {
-        // line 98
+        // line 103
         echo "      ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 98)->display($context);
-        // line 99
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 103)->display($context);
+        // line 104
         echo "    ";
     }
 
-    // line 101
+    // line 106
     public function block_bottom($context, array $blocks = array())
     {
-        // line 102
+        // line 107
         echo "      <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\" integrity=\"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\" crossorigin=\"anonymous\"></script>
     ";
     }
@@ -354,7 +359,7 @@ class __TwigTemplate_72ae577e9f3bd012d20c7a80b192b5495abf99ed93e3a64cee4a3f4edb5
 
     public function getDebugInfo()
     {
-        return array (  341 => 102,  338 => 101,  334 => 99,  331 => 98,  328 => 97,  323 => 93,  318 => 94,  316 => 93,  311 => 92,  308 => 91,  303 => 89,  299 => 82,  296 => 81,  293 => 80,  289 => 79,  286 => 78,  278 => 83,  275 => 80,  273 => 78,  256 => 64,  252 => 63,  246 => 59,  243 => 58,  239 => 51,  236 => 50,  233 => 49,  230 => 48,  227 => 47,  223 => 44,  220 => 43,  217 => 42,  215 => 41,  212 => 40,  209 => 39,  206 => 38,  198 => 52,  196 => 47,  190 => 45,  188 => 38,  183 => 36,  179 => 35,  175 => 34,  171 => 33,  167 => 32,  161 => 29,  157 => 28,  153 => 27,  149 => 26,  145 => 25,  141 => 24,  137 => 23,  133 => 22,  129 => 21,  125 => 20,  121 => 19,  117 => 18,  113 => 17,  109 => 16,  101 => 11,  97 => 10,  94 => 9,  92 => 8,  84 => 7,  81 => 6,  78 => 5,  72 => 104,  70 => 101,  67 => 100,  65 => 97,  62 => 96,  60 => 91,  57 => 90,  55 => 89,  52 => 88,  50 => 58,  45 => 56,  42 => 55,  40 => 5,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  346 => 107,  343 => 106,  339 => 104,  336 => 103,  333 => 102,  328 => 98,  323 => 99,  321 => 98,  316 => 97,  313 => 96,  308 => 94,  304 => 85,  301 => 84,  298 => 83,  294 => 82,  291 => 81,  281 => 86,  278 => 83,  276 => 81,  257 => 65,  253 => 64,  246 => 59,  243 => 58,  239 => 51,  236 => 50,  233 => 49,  230 => 48,  227 => 47,  223 => 44,  220 => 43,  217 => 42,  215 => 41,  212 => 40,  209 => 39,  206 => 38,  198 => 52,  196 => 47,  190 => 45,  188 => 38,  183 => 36,  179 => 35,  175 => 34,  171 => 33,  167 => 32,  161 => 29,  157 => 28,  153 => 27,  149 => 26,  145 => 25,  141 => 24,  137 => 23,  133 => 22,  129 => 21,  125 => 20,  121 => 19,  117 => 18,  113 => 17,  109 => 16,  101 => 11,  97 => 10,  94 => 9,  92 => 8,  84 => 7,  81 => 6,  78 => 5,  72 => 109,  70 => 106,  67 => 105,  65 => 102,  62 => 101,  60 => 96,  57 => 95,  55 => 94,  52 => 93,  50 => 58,  45 => 56,  42 => 55,  40 => 5,  35 => 3,  32 => 2,  30 => 1,);
     }
 }
 /* {% set theme_config = attribute(config.themes, config.system.pages.theme) %}*/
@@ -418,28 +423,33 @@ class __TwigTemplate_72ae577e9f3bd012d20c7a80b192b5495abf99ed93e3a64cee4a3f4edb5
 /*     <header class="header">*/
 /*       <div class="container">*/
 /*         <div class="row">*/
-/*         <div class="main-logo">*/
-/*           <a href="{{ base_url == '' ? '/' : base_url }}">*/
-/*             <img src="{{ url('theme://images/ClinTrialConnect.svg') }}" alt="ClinTrialConnect Logo" />*/
-/*           </a>*/
-/*         </div>*/
-/*         <div class="mobile-menu clearfix js-menu-activate">*/
-/*           <div class="pull-right">*/
-/*             <span class="menu-text">Menu</span>*/
-/*             <div class="menu-icon js-menu">*/
-/*               <span></span>*/
-/*               <span></span>*/
-/*               <span></span>*/
+/*           <div class="col-md-3">*/
+/*             <div class="main-logo">*/
+/*               <a href="{{ base_url == '' ? '/' : base_url }}">*/
+/*                 <img src="{{ url('theme://images/ClinTrialConnect.svg') }}" alt="ClinTrialConnect Logo" />*/
+/*               </a>*/
+/*               </div>*/
+/*           </div>*/
+/*           <div class="col-md-9">*/
+/*             <div class="mobile-menu clearfix js-menu-activate">*/
+/*               <div class="pull-right">*/
+/*                 <span class="menu-text">Menu</span>*/
+/*                 <div class="menu-icon js-menu">*/
+/*                   <span></span>*/
+/*                   <span></span>*/
+/*                   <span></span>*/
+/*                 </div>*/
+/*               </div>*/
+/*             </div>*/
+/*             <div class="navbar pull-right js-menu-main">*/
+/*               {% block header_extra %}*/
+/*               {% endblock %}*/
+/*               {% block header_navigation %}*/
+/*                 {% include 'partials/navigation.html.twig' %}*/
+/*               {% endblock %}*/
 /*             </div>*/
 /*           </div>*/
-/*         </div>*/
-/*         <div class="pull-right">*/
-/*           {% block header_extra %}*/
-/*           {% endblock %}*/
-/*           {% block header_navigation %}*/
-/*             {% include 'partials/navigation.html.twig' %}*/
-/*           {% endblock %}*/
-/*         </div>*/
+/*         */
 /*         </div>*/
 /*       </div>*/
 /*     </header>*/

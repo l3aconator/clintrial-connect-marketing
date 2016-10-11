@@ -1,5 +1,5 @@
 ---
-title: 'ClinTrialConnect unite patients with clinical trials that are available at their current physician’s office'
+title: 'ClinTrialConnect is the technology that allows patients to access the clinical trials that are offered by their physicians'
 onpage_menu: false
 backgroundImage: herobg.jpg
 ctaBlock:

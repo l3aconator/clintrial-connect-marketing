@@ -59,28 +59,33 @@
     <header class="header">
       <div class="container">
         <div class="row">
-        <div class="main-logo">
-          <a href="{{ base_url == '' ? '/' : base_url }}">
-            <img src="{{ url('theme://images/ClinTrialConnect.svg') }}" alt="ClinTrialConnect Logo" />
-          </a>
-        </div>
-        <div class="mobile-menu clearfix js-menu-activate">
-          <div class="pull-right">
-            <span class="menu-text">Menu</span>
-            <div class="menu-icon js-menu">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="col-md-3">
+            <div class="main-logo">
+              <a href="{{ base_url == '' ? '/' : base_url }}">
+                <img src="{{ url('theme://images/ClinTrialConnect.svg') }}" alt="ClinTrialConnect Logo" />
+              </a>
+              </div>
+          </div>
+          <div class="col-md-9">
+            <div class="mobile-menu clearfix js-menu-activate">
+              <div class="pull-right">
+                <span class="menu-text">Menu</span>
+                <div class="menu-icon js-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="navbar pull-right js-menu-main">
+              {% block header_extra %}
+              {% endblock %}
+              {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+              {% endblock %}
             </div>
           </div>
-        </div>
-        <div class="pull-right">
-          {% block header_extra %}
-          {% endblock %}
-          {% block header_navigation %}
-            {% include 'partials/navigation.html.twig' %}
-          {% endblock %}
-        </div>
+        
         </div>
       </div>
     </header>
